@@ -105,27 +105,27 @@
     nano
     firefox
     gimp
-    gnome-calendar
+    # gnome-calendar
     gnome-user-docs
     gnome-usage
-    gnome-chess
-    gnome-tweaks
-    gnome-clocks
-    gnome-keyring
-    gnome-terminal
-    gnome-weather
-    gnome-contacts
-    gnome-maps
-    gnome-photos
-    gnome-documents
-    gnome-sound-recorder
-    gnome-logs
-    gnome-characters
-    gnome-calculator
-    gnome-system-monitor
-    gnome-disk-utility
-    gnome-control-center
-    gnome-shell-extensions
+    # gnome-chess
+    # gnome-tweaks
+    # gnome-clocks
+    # gnome-keyring
+    # gnome-terminal
+    # gnome-weather
+    # gnome-contacts
+    # gnome-maps
+    # gnome-photos
+    # gnome-documents
+    # gnome-sound-recorder
+    # gnome-logs
+    # gnome-characters
+    # gnome-calculator
+    # gnome-system-monitor
+    # gnome-disk-utility
+    # gnome-control-center
+    # gnome-shell-extensions
     inkscape-with-extensions
   ];
 
