@@ -1,0 +1,6 @@
+[submodule "nixos-hardware"]
+	path = nixos-hardware
+	url = https://github.com/NixOS/nixos-hardware.git
+[submodule "nixos-auto-installer"]
+	path = nixos-auto-installer
+	url = https://github.com/tfc/nixos-auto-installer.git
