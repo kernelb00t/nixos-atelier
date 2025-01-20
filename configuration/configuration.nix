@@ -138,11 +138,11 @@
 
   # boot.plymouth.enable = true;
 
-  customization = {
-    gdm-logo.enable = true;
-    gnome-background.enable = true;
-    plymouth-logo.enable = true;
-  };
+  # customization = {
+  #   gdm-logo.enable = true;
+  #   gnome-background.enable = true;
+  #   plymouth-logo.enable = true;
+  # };
 
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "makerspace";
