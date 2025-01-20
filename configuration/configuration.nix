@@ -85,6 +85,17 @@
     #media-session.enable = true;
   };
 
+    services.xserver = {
+    desktopManager.gnome.enable = true;
+    displayManager.gdm.enable = true;
+    enable = true;
+    libinput.enable = true;
+    xkb = {
+      layout = "fr";
+      variant = "mac";
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     git
     vim
@@ -117,17 +128,6 @@
     gnome-shell-extensions
     inkscape-with-extensions
   ];
-
-  services.xserver = {
-    desktopManager.gnome.enable = true;
-    displayManager.gdm.enable = true;
-    enable = true;
-    libinput.enable = true;
-    xkb = {
-      layout = "fr";
-      variant = "mac";
-    };
-  };
 
   # Configure console keymap
   console.keyMap = "fr";
