@@ -92,7 +92,7 @@
     nano
     firefox
     gimp
-    gnome-tweaks
+    # gnome-tweaks
     gnome-calendar
     gnome-user-docs
     gnome-usage
