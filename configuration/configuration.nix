@@ -94,7 +94,6 @@
     nano
     firefox
     gimp
-    # gnome-tweaks
     gnome-calendar
     gnome-user-docs
     gnome-usage
@@ -116,8 +115,6 @@
     gnome-disk-utility
     gnome-control-center
     gnome-shell-extensions
-    
-
     inkscape-with-extensions
   ];
 
