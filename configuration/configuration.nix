@@ -14,6 +14,8 @@
     # ./modules/virtualization.nix
   ];
 
+  system.stateVersion = "24.11";
+
   # Allow unfree packages to get wifi drivers and other utilities.
   nixpkgs.config.allowUnfree = true;
 
