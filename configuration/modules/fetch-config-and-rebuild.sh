@@ -2,13 +2,14 @@
 
 # Configuration
 REPO_URL="https://github.com/kernelb00t/nixos-atelier"
-LOCAL_REPO="/etc/nixos/config-repo"
+LOCAL_REPO="/etc/nixos"
 BRANCH="main"
 
 # Ensure the local repo directory exists
 if [ ! -d "$LOCAL_REPO" ]; then
   echo "No config repo found in $LOCAL_REPO. Cloning configuration repository..."
-
+  
+  rm -rf "$LOCAL_REPO/*"
   git clone "$REPO_URL" "$LOCAL_REPO" --branch "$BRANCH" --depth 1
 
   if [ $? -ne 0 ]; then
