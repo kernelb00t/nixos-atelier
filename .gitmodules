@@ -4,3 +4,6 @@
 [submodule "nixos-auto-installer"]
 	path = nixos-auto-installer
 	url = https://github.com/tfc/nixos-auto-installer.git
+[submodule "nixos-atelier-config"]
+	path = nixos-atelier-config
+	url = https://github.com/kernelb00t/nixos-atelier-config
