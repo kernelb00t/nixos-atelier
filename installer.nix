@@ -10,7 +10,9 @@ in
 {
   imports = [
     "${modulesPath}/installer/cd-dvd/installation-cd-minimal.nix"
-  ];
+  ];\
+
+  virtualisation.vmware.guest.enable = true;
 
   isoImage.isoName = lib.mkForce "nixcademy-auto-installer-${config.system.nixos.label}-${pkgs.stdenv.hostPlatform.system}.iso";
   services.getty.helpLine = ''

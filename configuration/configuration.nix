@@ -14,6 +14,8 @@
     # ./modules/virtualization.nix
   ];
 
+  virtualisation.vmware.guest.enable = true;
+
   system.stateVersion = "24.11";
 
   # Allow unfree packages to get wifi drivers and other utilities.
