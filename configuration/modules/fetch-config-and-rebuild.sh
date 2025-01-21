@@ -6,7 +6,7 @@ LOCAL_REPO="/etc/nixos"
 BRANCH="main"
 
 # Ensure the local repo directory exists
-if [ ! -d "$LOCAL_REPO" ]; then
+if [ ! -d "$LOCAL_REPO/.git" ]; then
   echo "No config repo found in $LOCAL_REPO. Cloning configuration repository..."
   
   rm -rf "$LOCAL_REPO/*"
