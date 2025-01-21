@@ -10,14 +10,13 @@ if [ ! -d "$LOCAL_REPO/.git" ]; then
   echo "No config repo found in $LOCAL_REPO. Cloning configuration repository..."
   
   rm -rf "$LOCAL_REPO/*"
-  git clone "$REPO_URL" "$LOCAL_REPO" --branch "$BRANCH" --depth 1
+  git clone "$REPO_URL" "$LOCAL_REPO" --branch "$BRANCH" --depth 1 .
 
   if [ $? -ne 0 ]; then
     echo "Error: Failed to clone repository from $REPO_URL"
     exit 1
   fi
 
-  ln -s "$LOCAL_REPO/configuration.nix" /etc/nixos/configuration.nix
 else
   echo "Fetching latest changes from remote repository..."
   cd "$LOCAL_REPO" || exit
