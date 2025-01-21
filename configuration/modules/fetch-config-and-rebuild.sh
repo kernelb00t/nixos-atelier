@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-REPO_URL="<URL_OF_REMOTE_GIT_REPO>"
+REPO_URL="https://github.com/kernelb00t/nixos-atelier"
 LOCAL_REPO="/etc/nixos/config-repo"
 BRANCH="main"
 
@@ -16,6 +16,7 @@ if [ ! -d "$LOCAL_REPO" ]; then
     exit 1
   fi
 
+  ln -s "$LOCAL_REPO/configuration.nix" /etc/nixos/configuration.nix
 else
   echo "Fetching latest changes from remote repository..."
   cd "$LOCAL_REPO" || exit
