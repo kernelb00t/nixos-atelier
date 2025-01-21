@@ -10,7 +10,7 @@ in
 {
   imports = [
     "${modulesPath}/installer/cd-dvd/installation-cd-minimal.nix"
-  ];\
+  ];
 
   virtualisation.vmware.guest.enable = true;
 
