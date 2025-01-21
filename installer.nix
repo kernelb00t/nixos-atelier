@@ -15,6 +15,8 @@ in
   virtualisation.vmware.guest.enable = true;
 
   isoImage.isoName = lib.mkForce "nixcademy-auto-installer-${config.system.nixos.label}-${pkgs.stdenv.hostPlatform.system}.iso";
+  isoImage.squashfsCompression = "zstd -T0 -Xcompression-level 3";
+
   services.getty.helpLine = ''
     ███╗   ██╗██╗██╗  ██╗ ██████╗ █████╗ ██████╗ ███████╗███╗   ███╗██╗   ██╗
     ████╗  ██║██║╚██╗██╔╝██╔════╝██╔══██╗██╔══██╗██╔════╝████╗ ████║╚██╗ ██╔╝
